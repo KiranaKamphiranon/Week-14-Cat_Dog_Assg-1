@@ -21,7 +21,7 @@ public:
     cout<<"Destruct CAT SIZE -- "<<size<<endl;
   }
     void show_node(){
-        cout<<"Meaw Meaw "<<setw(2)<<size<<" | ";// cout<<NODE::size; CANNOT
+        cout<<"Meaw Meaw "<<setw(3)<<size<<" | ";// cout<<NODE::size; CANNOT
         NODE::show_node();
     }
 
@@ -38,7 +38,7 @@ public:
       cout<<"Destruct DOG HEIGHT -- "<<height<<endl;
     }
     void show_node(){
-        cout<<"Hong Hong "<<setw(2)<<height<<" | ";
+        cout<<"Hong Hong "<<setw(3)<<height<<" | ";
         NODE::show_node();
     }
 

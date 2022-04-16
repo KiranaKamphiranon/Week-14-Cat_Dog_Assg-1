@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
    NODE *t;
   srand(time(NULL));
    for(i=1;i<argc;i=i+3) {
-          if(i%2){
+          if(atoi(argv[i])%2==0){
            t=new cat(atoi(argv[i+1]),atoi(argv[i+2]));
            }
          else{
@@ -19,12 +19,12 @@ int main(int argc, char *argv[])
            }
       A.add_node(t);
    }
-  cout<<"----------------------------"<<endl;
+  cout<<"------------------------------"<<endl;
   A.show_all();
   A.snap_finger(); // kill 1/2 (make size=0)
-  cout<<"--------------------------"<<endl;
-  A.show_all();
   cout<<"----------------------------"<<endl;
+  A.show_all();
+  cout<<"------------------------------"<<endl;
 }
 
 /* Example output  ./LL 5 1 8 1 6 8 4
